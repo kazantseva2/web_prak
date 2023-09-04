@@ -4,8 +4,7 @@
 ![bd_prak](https://user-images.githubusercontent.com/121457645/221985624-a99afbd9-d784-4f53-bfff-5654c3619398.svg)
 
 # Схема страниц
-
-![bd_prak](shema_prak.pdf)
+![shema_prak.pdf](https://github.com/kazantseva2/web_prak/blob/main/shema_prak%20(2).svg)
 
 ## Для соискателя
 ### Главная страница для соискателя:
