@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <style>
+        .indent {
+            margin-left: 30px;
+            margin-right: 30px;
+            margin-top: 20px;
+        }
+    </style>
+    <title>Редактирование информации о компании</title>
+</head>
+
+<body>
+<div th:replace="headerCompany2 :: page-header"> </div>
+
+<div class="indent">
+    <h1>Редактирование</h1>
+    <form action="update" method="post">
+        <div class="text-center">
+            <p>
+                <input type="text" th:value="${company.login}" name="login" placeholder="Логин" class="form-control">
+            </p>
+            <p>
+                <input type="text" th:value="${company.password}" name="password" placeholder="Пароль" class="form-control">
+            </p>
+            <p>
+                <input type="text" th:value="${company.name}" name="name" placeholder="Название компании" class="form-control">
+            </p>
+            <p>
+                <input type="text" th:value="${company.info}" name="info" placeholder="Информация о компании" class="form-control">
+            </p>
+            <input type="submit" value="Обновить" class="btn btn-warning">
+        </div>
+    </form>
+</div>
+
+<div th:replace="general :: site-footer"></div>
+<div th:replace="general :: site-script"></div>
+
+</body>
+</html>

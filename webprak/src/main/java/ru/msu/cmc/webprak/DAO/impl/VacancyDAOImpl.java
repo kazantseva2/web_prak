@@ -8,7 +8,6 @@ import ru.msu.cmc.webprak.DAO.CompanyDAO;
 import ru.msu.cmc.webprak.DAO.VacancyDAO;
 import ru.msu.cmc.webprak.models.Vacancy;
 
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -95,10 +94,7 @@ public class VacancyDAOImpl extends CommonDAOImpl<Vacancy, Long> implements Vaca
     }
 
     @Override
-    public List<Vacancy> getVacanciesByFilter(FilterVacancy filter) {
-        String company = filter.getCompany();
-        String position = filter.getPosition();
-        Integer salary = filter.getSalary();
+    public List<Vacancy> getVacanciesByFilter(String company, String position, Integer salary) {
 
         // Если ни один параметр не является null, то выполняем прямой запрос
         if (company != null && position != null && salary != null) {

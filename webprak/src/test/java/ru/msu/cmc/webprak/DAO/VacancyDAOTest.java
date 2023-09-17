@@ -30,24 +30,24 @@ public class VacancyDAOTest {
         List<Vacancy> vacancyListAll = (List<Vacancy>) vacancyDAO.getAll();
         assertEquals(3, vacancyListAll.size());
 
-        List<Vacancy> vacancies1 = vacancyDAO.getVacanciesByFilter(new VacancyDAO.FilterVacancy(null, "Senior", 200000));
+        List<Vacancy> vacancies1 = vacancyDAO.getVacanciesByFilter(null, "Senior", 200000);
         assertEquals(1, vacancies1.size());
         assertEquals("Разработчик веб-приложений", vacancies1.get(0).getTitle());
 
-        List<Vacancy> vacancies5 = vacancyDAO.getVacanciesByFilter(new VacancyDAO.FilterVacancy("Яндекс", "Senior", 200000));
+        List<Vacancy> vacancies5 = vacancyDAO.getVacanciesByFilter("Яндекс", "Senior", 200000);
         assertEquals(0, vacancies5.size());
 
-        List<Vacancy> vacancies6 = vacancyDAO.getVacanciesByFilter(new VacancyDAO.FilterVacancy("Яндекс", null, null));
+        List<Vacancy> vacancies6 = vacancyDAO.getVacanciesByFilter("Яндекс", null, null);
         assertEquals(0, vacancies6.size());
 
-        List<Vacancy> vacancies2 = vacancyDAO.getVacanciesByFilter(new VacancyDAO.FilterVacancy("МегаФон", null, 40000));
+        List<Vacancy> vacancies2 = vacancyDAO.getVacanciesByFilter("МегаФон", null, 40000);
         assertEquals(1, vacancies2.size());
         assertEquals("Грузчик, полный рабочий день.", vacancies2.get(0).getTitle());
 
-        List<Vacancy> vacancies3 = vacancyDAO.getVacanciesByFilter(new VacancyDAO.FilterVacancy("ВКонтакте","Junior", null));
+        List<Vacancy> vacancies3 = vacancyDAO.getVacanciesByFilter("ВКонтакте","Junior", null);
         assertEquals(1, vacancies3.size());
 
-        List<Vacancy> vacancies4 = vacancyDAO.getVacanciesByFilter(new VacancyDAO.FilterVacancy(null,null, null));
+        List<Vacancy> vacancies4 = vacancyDAO.getVacanciesByFilter(null,null, null);
         assertEquals(3, vacancies4.size());
     }
 }

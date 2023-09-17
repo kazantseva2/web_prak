@@ -1,7 +1,6 @@
 package ru.msu.cmc.webprak.models;
 
 import lombok.*;
-
 import javax.persistence.*;
 
 @Entity

@@ -1,7 +1,6 @@
 package ru.msu.cmc.webprak.models;
 
 import lombok.*;
-
 import javax.persistence.*;
 import java.util.Objects;
 
@@ -50,5 +49,9 @@ public class Vacancy implements CommonEntity<Long> {
                 && position.equals(other.position)
                 && Objects.equals(salary, other.salary)
                 && requirements.equals(other.requirements);
+    }
+
+    public String say() {
+        return "say";
     }
 }

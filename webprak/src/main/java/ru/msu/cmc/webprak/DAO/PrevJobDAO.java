@@ -9,5 +9,5 @@ public interface PrevJobDAO extends CommonDAO<PrevJob, Long> {
     List<JobSeeker> getSeekersWithCompany(String company);
     List<JobSeeker> getSeekersWithPosition(String position);
     List<JobSeeker> getSeekersWithSalary(int salary);
-
+    List<PrevJob> getJobsToSeeker(JobSeeker seeker);
 }

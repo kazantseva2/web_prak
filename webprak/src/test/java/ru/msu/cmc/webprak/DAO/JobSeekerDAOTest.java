@@ -23,33 +23,39 @@ public class JobSeekerDAOTest {
     @Autowired
     private JobSeekerDAO seekerDAO;
     @Autowired
-    private SessionFactory sessionFactory;
+    private PrevJobDAO prevJobDAO;
 
     @Test
     void testGetByFilter() {
         List<JobSeeker> seekerListAll = (List<JobSeeker>) seekerDAO.getAll();
         assertEquals(3, seekerListAll.size());
 
-        List<JobSeeker> seekers1 = seekerDAO.getJobSeekersByFilter(new JobSeekerDAO.FilterSeeker(null,null, null, 150000));
+        List<JobSeeker> seekers1 = seekerDAO.getJobSeekersByFilter(null,null, null, 150000);
         assertEquals(1, seekers1.size());
         assertEquals("Пономарев Даниил Евгеньевич", seekers1.get(0).getFullName());
 
-        List<JobSeeker> seekers2 = seekerDAO.getJobSeekersByFilter(new JobSeekerDAO.FilterSeeker(null,"Яндекс", null, null));
+        List<JobSeeker> seekers2 = seekerDAO.getJobSeekersByFilter(null,"Яндекс", null, null);
         assertEquals(1, seekers2.size());
         assertEquals("Захарова Марьяна Никитична", seekers2.get(0).getFullName());
 
-        List<JobSeeker> seekers3 = seekerDAO.getJobSeekersByFilter(new JobSeekerDAO.FilterSeeker("Коледж",null, null, null));
+        List<JobSeeker> seekers3 = seekerDAO.getJobSeekersByFilter("Колледж",null, null, null);
         assertEquals(1, seekers3.size());
         assertEquals("Беляева Екатерина Александровна", seekers3.get(0).getFullName());
 
-        List<JobSeeker> seekers4 = seekerDAO.getJobSeekersByFilter(new JobSeekerDAO.FilterSeeker(null,null, "директор", null));
+        List<JobSeeker> seekers4 = seekerDAO.getJobSeekersByFilter(null,null, "директор", null);
         assertEquals(0, seekers4.size());
 
-        List<JobSeeker> seekers5 = seekerDAO.getJobSeekersByFilter(new JobSeekerDAO.FilterSeeker("ВМК","Яндекс", null, null));
+        List<JobSeeker> seekers5 = seekerDAO.getJobSeekersByFilter("ВМК","Яндекс", null, null);
         assertEquals(1, seekers5.size());
         assertEquals("Захарова Марьяна Никитична", seekers5.get(0).getFullName());
 
     }
-
+    @Test
+    void testLogin() {
+        JobSeeker seeker = seekerDAO.getUser( "zaharova01","f8en30f7");
+        List<PrevJob> jobList = prevJobDAO.getJobsToSeeker(seeker);
+        assertEquals("Захарова Марьяна Никитична", seeker.getFullName());
+        assertEquals(2, jobList.size());
+    }
 
 }

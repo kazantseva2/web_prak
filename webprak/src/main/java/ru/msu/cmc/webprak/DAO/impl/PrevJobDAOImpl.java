@@ -7,9 +7,6 @@ import ru.msu.cmc.webprak.DAO.PrevJobDAO;
 import ru.msu.cmc.webprak.models.JobSeeker;
 import ru.msu.cmc.webprak.models.PrevJob;
 
-import javax.persistence.criteria.CriteriaBuilder;
-import javax.persistence.criteria.CriteriaQuery;
-import javax.persistence.criteria.Root;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -62,6 +59,16 @@ public class PrevJobDAOImpl extends CommonDAOImpl<PrevJob, Long> implements Prev
             }
 
             return seekerList;
+        }
+    }
+
+    @Override
+    public List<PrevJob> getJobsToSeeker(JobSeeker seeker){
+        try (Session session = sessionFactory.openSession()) {
+            Query<PrevJob> query = session.createQuery("FROM PrevJob WHERE idSeeker = :skr", PrevJob.class)
+                    .setParameter("skr", seeker);
+
+            return query.getResultList();
         }
     }
     private String likeExpr(String param) {

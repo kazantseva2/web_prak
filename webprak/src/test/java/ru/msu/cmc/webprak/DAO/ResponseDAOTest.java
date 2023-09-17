@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.TestPropertySource;
 import ru.msu.cmc.webprak.models.JobSeeker;
+import ru.msu.cmc.webprak.models.PrevJob;
 import ru.msu.cmc.webprak.models.Response;
 import ru.msu.cmc.webprak.models.Vacancy;
 
@@ -41,35 +42,31 @@ public class ResponseDAOTest {
         assertNull(responseID2);
     }
 
-
-
     @Test
     void testUpdate() {
         Response updateResponse = responseDAO.getById(1L);
-        updateResponse.setIdVacancy(vacancyDAO.getById(2L));
+        updateResponse.setIdVacancy(vacancyDAO.getById(6L));
         responseDAO.update(updateResponse);
 
         Response responseId1 = responseDAO.getById(1L);
-        assertEquals(vacancyDAO.getById(2L), responseId1.getIdVacancy());
+        assertEquals(vacancyDAO.getById(6L), responseId1.getIdVacancy());
     }
 
     @Test
     void testListOfResponses() {
-        List<Vacancy> vacancies = responseDAO.getResponsesToSeeker(jobSeekerDAO.getById(1L));
-        assertEquals(2, vacancies.size());
+        List<Response> responses1 = responseDAO.getResponsesToSeeker(jobSeekerDAO.getById(1L));
+        assertEquals(2, responses1.size());
 
-        List<JobSeeker> seekers = responseDAO.getResponsesToVacancy(vacancyDAO.getById(3L));
-        assertEquals(1, seekers.size());
+        List<Response> responses2 = responseDAO.getResponsesToVacancy(vacancyDAO.getById(7L));
+        assertEquals(1, responses2.size());
     }
-
-
 
     @BeforeEach
     void beforeEach() {
         List<Response> responseList = new ArrayList<>();
-        responseList.add(new Response(vacancyDAO.getById(1L), jobSeekerDAO.getById(1L)));
-        responseList.add(new Response(vacancyDAO.getById(2L), jobSeekerDAO.getById(1L)));
-        responseList.add(new Response(vacancyDAO.getById(3L), jobSeekerDAO.getById(3L)));
+        responseList.add(new Response(vacancyDAO.getById(5L), jobSeekerDAO.getById(1L)));
+        responseList.add(new Response(vacancyDAO.getById(6L), jobSeekerDAO.getById(1L)));
+        responseList.add(new Response(vacancyDAO.getById(7L), jobSeekerDAO.getById(3L)));
 
         responseDAO.saveCollection(responseList);
     }
