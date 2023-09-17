@@ -1,10 +1,11 @@
 # Кадровое агентство
 # База данных
 
-![bd_prak](https://user-images.githubusercontent.com/121457645/221985624-a99afbd9-d784-4f53-bfff-5654c3619398.svg)
+![bd_prak](https://github.com/kazantseva2/web_prak/blob/main/bd_prak.svg)
 
 # Схема страниц
-![shema_prak.pdf](https://github.com/kazantseva2/web_prak/blob/main/shema_prak%20(2).svg)
+![shema_prak.pdf](https://github.com/kazantseva2/web_prak/blob/main/shema_prak.svg)
+
 
 ## Для соискателя
 ### Главная страница для соискателя:
