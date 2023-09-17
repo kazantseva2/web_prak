@@ -1,15 +1,13 @@
 CREATE TABLE company (
-  id int PRIMARY KEY,
+  id serial PRIMARY KEY,
   login varchar(100) NOT NULL, 
   password varchar(100) NOT NULL,
   name varchar(200),
-  info text,
-  end_registration TIMESTAMP,
-  count_vacancies int
+  info text
 );
 
 CREATE TABLE vacancy (
-  id int PRIMARY KEY,
+  id serial PRIMARY KEY,
   id_company int REFERENCES company(id),
   title varchar(200) NOT NULL,
   position text,
@@ -18,11 +16,11 @@ CREATE TABLE vacancy (
 );
 
 CREATE TABLE job_seeker (
-  id int PRIMARY KEY,
+  id serial PRIMARY KEY,
   login varchar(100) NOT NULL, 
   password varchar(100) NOT NULL,
   full_name varchar(200),
-  contact_info json,
+  contact_info text,
   education_info text,
   status text,
   desired_position text,
@@ -30,7 +28,7 @@ CREATE TABLE job_seeker (
 );
 
 CREATE TABLE prev_job (
-  id int PRIMARY KEY,
+  id serial PRIMARY KEY,
   id_seeker int REFERENCES job_seeker(id),
   company text,
   position text,

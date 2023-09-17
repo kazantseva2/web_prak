@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <style>
+        .indent {
+            margin-left: 30px;
+            margin-right: 30px;
+            margin-top: 20px;
+        }
+    </style>
+    <title>Информация о вакансии</title>
+</head>
+
+<body>
+<div th:replace="headerSeeker2 :: page-header"> </div>
+
+<div class="indent">
+    <div id="VacancyInfo">
+        <h4 th:text="${vacancy.title}"></h4>
+        <p>
+          <span th:if="${vacancy.title != null}">
+             <b>Наименование: </b>
+              <span th:text="${vacancy.title}"></span>
+          </span>
+        </p>
+        <p>
+          <span th:if="${vacancy.getIdCompany().getName() != null}">
+             <b>Компания: </b>
+              <span th:text="${vacancy.getIdCompany().getName}"></span>
+              <a th:href="'/seekerPage/' + ${seeker.id} + '/companyInfo/' + ${vacancy.getIdCompany().getId()}">
+                (о компании)
+              </a>
+          </span>
+        </p>
+        <p>
+          <span th:if="${vacancy.position != null}">
+             <b>Позиция: </b>
+              <span th:text="${vacancy.position}"></span>
+          </span>
+        </p>
+        <p>
+          <span th:if="${vacancy.salary != null}">
+             <b>Зарплата: </b>
+              <span th:text="${vacancy.salary}"></span>
+          </span>
+        </p>
+        <p>
+          <span th:if="${vacancy.requirements != null}">
+             <b>Требования: </b>
+              <span th:text="${vacancy.requirements}"></span>
+          </span>
+        </p>
+        <a th:href="'/seekerPage/' + ${seeker.id} + '/vacancy/'+${vacancy.id} + '/click'" class="btn btn-warning">
+            Откликнуться
+        </a>
+    </div>
+
+</div>
+
+<div th:replace="general :: site-footer"></div>
+<div th:replace="general :: site-script"></div>
+
+</body>
+</html>

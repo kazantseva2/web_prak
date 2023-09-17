@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.863s</div>
+<div class="counter">0.698s</div>
 <p>duration</p>
 </div>
 </td>
@@ -81,8 +81,8 @@
 </tr>
 </thead>
 <tr>
-<td class="success">testGetByFilter()</td>
-<td class="success">0.863s</td>
+<td class="success">testLogin()</td>
+<td class="success">0.698s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -90,13 +90,13 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>01:26:44.464 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [JobSeekerDAOTest]: using SpringBootContextLoader
-01:26:44.476 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [ru.msu.cmc.webprak.DAO.JobSeekerDAOTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-01:26:44.478 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [ru.msu.cmc.webprak.DAO.JobSeekerDAOTest]: JobSeekerDAOTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-01:26:44.521 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using ContextCustomizers for test class [JobSeekerDAOTest]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer]
-01:26:44.683 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/home/varvara/Документы/webprak/build/classes/java/main/ru/msu/cmc/webprak/WebprakApplication.class]
-01:26:44.685 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration ru.msu.cmc.webprak.WebprakApplication for test class ru.msu.cmc.webprak.DAO.JobSeekerDAOTest
-01:26:44.920 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners for test class [JobSeekerDAOTest]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
+<pre>18:10:05.694 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [JobSeekerDAOTest]: using SpringBootContextLoader
+18:10:05.707 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [ru.msu.cmc.webprak.DAO.JobSeekerDAOTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+18:10:05.708 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [ru.msu.cmc.webprak.DAO.JobSeekerDAOTest]: JobSeekerDAOTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+18:10:05.757 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using ContextCustomizers for test class [JobSeekerDAOTest]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer]
+18:10:05.926 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/home/varvara/Документы/webprak/build/classes/java/main/ru/msu/cmc/webprak/WebprakApplication.class]
+18:10:05.928 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration ru.msu.cmc.webprak.WebprakApplication for test class ru.msu.cmc.webprak.DAO.JobSeekerDAOTest
+18:10:06.130 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners for test class [JobSeekerDAOTest]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -106,21 +106,22 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.0.4)
 
-2023-09-07T01:26:45.451+03:00  INFO 11284 --- [    Test worker] r.msu.cmc.webprak.DAO.JobSeekerDAOTest   : Starting JobSeekerDAOTest using Java 17.0.6 with PID 11284 (started by varvara in /home/varvara/Документы/webprak)
-2023-09-07T01:26:45.454+03:00  INFO 11284 --- [    Test worker] r.msu.cmc.webprak.DAO.JobSeekerDAOTest   : No active profile set, falling back to 1 default profile: &quot;default&quot;
-2023-09-07T01:26:46.985+03:00  INFO 11284 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
-2023-09-07T01:26:47.338+03:00  INFO 11284 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-09-07T01:26:48.045+03:00  INFO 11284 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-2023-09-07T01:26:49.293+03:00  INFO 11284 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-09-07T01:26:50.238+03:00  INFO 11284 --- [    Test worker] r.msu.cmc.webprak.DAO.JobSeekerDAOTest   : Started JobSeekerDAOTest in 5.267 seconds (process running for 7.49)
+2023-09-17T18:10:06.662+03:00  INFO 12414 --- [    Test worker] r.msu.cmc.webprak.DAO.JobSeekerDAOTest   : Starting JobSeekerDAOTest using Java 17.0.6 with PID 12414 (started by varvara in /home/varvara/Документы/webprak)
+2023-09-17T18:10:06.665+03:00  INFO 12414 --- [    Test worker] r.msu.cmc.webprak.DAO.JobSeekerDAOTest   : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2023-09-17T18:10:08.369+03:00  INFO 12414 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2023-09-17T18:10:08.706+03:00  INFO 12414 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-09-17T18:10:09.394+03:00  INFO 12414 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-09-17T18:10:10.710+03:00  INFO 12414 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-17T18:10:11.368+03:00  INFO 12414 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-09-17T18:10:11.714+03:00  INFO 12414 --- [    Test worker] r.msu.cmc.webprak.DAO.JobSeekerDAOTest   : Started JobSeekerDAOTest in 5.532 seconds (process running for 8.86)
 </pre>
 </span>
 </div>
 <div id="tab2" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>[2023.09.07 01:26:45] (Coverage): Error during class instrumentation: org.springframework.boot.logging.log4j2.Log4J2LoggingSystem: java.lang.RuntimeException: java.io.IOException: Class org/apache/logging/log4j/core/config/composite/CompositeConfiguration not found
-[2023.09.07 01:26:46] (Coverage): Error during class instrumentation: org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport: java.lang.RuntimeException: java.io.IOException: Class jakarta/validation/ValidatorFactory not found
+<pre>[2023.09.17 18:10:06] (Coverage): Error during class instrumentation: org.springframework.boot.logging.log4j2.Log4J2LoggingSystem: java.lang.RuntimeException: java.io.IOException: Class org/apache/logging/log4j/core/config/composite/CompositeConfiguration not found
+[2023.09.17 18:10:07] (Coverage): Error during class instrumentation: org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport: java.lang.RuntimeException: java.io.IOException: Class jakarta/validation/ValidatorFactory not found
 </pre>
 </span>
 </div>
@@ -132,7 +133,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.6.1</a> at 7 сент. 2023 г., 01:26:51</p>
+<a href="http://www.gradle.org">Gradle 7.6.1</a> at 17 сент. 2023 г., 18:10:13</p>
 </div>
 </div>
 </body>
