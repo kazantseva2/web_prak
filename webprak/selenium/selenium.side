@@ -1,0 +1,1765 @@
+{
+  "id": "ffeb5926-8be0-424b-a1a8-5a6ebf697d8a",
+  "version": "2.0",
+  "name": "selenium",
+  "url": "http://localhost:8080",
+  "tests": [{
+    "id": "5464a40d-30ad-49c1-af55-866b84a892dd",
+    "name": "RegistrationCompany",
+    "commands": [{
+      "id": "67ae74e9-a470-4aa4-94df-8ab553b1c14c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6a6ed754-2f60-4416-91d5-a3695f0a47a9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1206x693",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3e3f3114-ebef-4018-9088-64a0b803ddac",
+      "comment": "",
+      "command": "click",
+      "target": "id=rootCompanyLink",
+      "targets": [
+        ["id=rootCompanyLink", "id"],
+        ["linkText=Для компаний", "linkText"],
+        ["css=#rootCompanyLink", "css:finder"],
+        ["xpath=//a[contains(text(),'Для компаний')]", "xpath:link"],
+        ["xpath=//a[@id='rootCompanyLink']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'indexCompany')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Для компаний')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ad56c53-b745-4103-a4c6-5c292522d2f0",
+      "comment": "",
+      "command": "click",
+      "target": "id=seekerRegLink",
+      "targets": [
+        ["id=seekerRegLink", "id"],
+        ["linkText=Регистрация", "linkText"],
+        ["css=#seekerRegLink", "css:finder"],
+        ["xpath=//a[contains(text(),'Регистрация')]", "xpath:link"],
+        ["xpath=//a[@id='seekerRegLink']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'companyRegistration')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Регистрация')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f50a4149-7428-4398-b244-991b40911961",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Регистрация",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eefbdf70-a727-4a92-82cd-5f9ccf462bcf",
+      "comment": "",
+      "command": "type",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=p:nth-child(1) > .input-field", "css:finder"],
+        ["xpath=//input[@name='login']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "myLogin"
+    }, {
+      "id": "be89611d-755f-4259-8cb7-25b2e0e22a4b",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=p:nth-child(2) > .input-field", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "1234"
+    }, {
+      "id": "4973bdb9-d2ac-4a69-a7ad-a3f31abed012",
+      "comment": "",
+      "command": "click",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=p:nth-child(1) > .input-field", "css:finder"],
+        ["xpath=//input[@name='login']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "701285da-e212-47f6-a075-e99077272c1d",
+      "comment": "",
+      "command": "click",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=p:nth-child(1) > .input-field", "css:finder"],
+        ["xpath=//input[@name='login']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0bafb3bd-4cd5-4a22-b689-de72e5f0507a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.indent > .text-center",
+      "targets": [
+        ["css=.indent > .text-center", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Регистрация компании')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "137f6b0f-12a7-4ac8-a483-6ba387efec05",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=p:nth-child(2) > .input-field", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e63e2d0-393c-43f7-97ce-09688bc52573",
+      "comment": "",
+      "command": "click",
+      "target": "css=.submit-button",
+      "targets": [
+        ["css=.submit-button", "css:finder"],
+        ["xpath=//input[@value='Зарегистрироваться']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "84084803-6862-4fed-acc6-11001dea398c",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=p:nth-child(2) > .input-field", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "776e7787-6dfc-4c46-a3d3-8ada6dd7debe",
+      "comment": "",
+      "command": "type",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=p:nth-child(1) > .input-field", "css:finder"],
+        ["xpath=//input[@name='login']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "myLogin"
+    }, {
+      "id": "93551249-63d5-4b61-8d5a-5087c5054479",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=p:nth-child(2) > .input-field", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "1234"
+    }, {
+      "id": "cedb3112-3136-4979-9172-b1434c881104",
+      "comment": "",
+      "command": "click",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=p:nth-child(1) > .input-field", "css:finder"],
+        ["xpath=//input[@name='login']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "03270336-7233-48e6-93b5-40e82718b22b",
+      "comment": "",
+      "command": "click",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=p:nth-child(1) > .input-field", "css:finder"],
+        ["xpath=//input[@name='login']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ffcb0ae-ebdd-474a-93e4-bd06cf92e68b",
+      "comment": "",
+      "command": "click",
+      "target": "css=form > .text-center",
+      "targets": [
+        ["css=form > .text-center", "css:finder"],
+        ["xpath=//form/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "40b41c90-e5cd-4785-87ca-3befb6e7cd24",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Вход",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f2cf834e-54f4-44ba-8d31-44b0af305e7e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.submit-button",
+      "targets": [
+        ["css=.submit-button", "css:finder"],
+        ["xpath=//input[@value='Войти']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "36a65175-9fee-4dcc-a03a-a79936d9a47a",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Страница компании",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "62338889-a8af-4d18-8d34-4b2f97df71ab",
+    "name": "EditCompanyPage",
+    "commands": [{
+      "id": "e04ad3a3-f5ae-4f82-90a1-1047061aac48",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b8d2d9a5-82eb-4dd7-8c50-37b2a6c50f3b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1206x693",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "31ce6f75-e3e0-4c86-baf3-8c3aa30a9b2c",
+      "comment": "",
+      "command": "click",
+      "target": "id=rootCompanyLink",
+      "targets": [
+        ["id=rootCompanyLink", "id"],
+        ["linkText=Для компаний", "linkText"],
+        ["css=#rootCompanyLink", "css:finder"],
+        ["xpath=//a[contains(text(),'Для компаний')]", "xpath:link"],
+        ["xpath=//a[@id='rootCompanyLink']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'indexCompany')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Для компаний')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "02c83439-7bf3-4810-ae5a-f1205bb06444",
+      "comment": "",
+      "command": "click",
+      "target": "id=seekerLoginLink",
+      "targets": [
+        ["id=seekerLoginLink", "id"],
+        ["linkText=Вход", "linkText"],
+        ["css=#seekerLoginLink", "css:finder"],
+        ["xpath=//a[contains(text(),'Вход')]", "xpath:link"],
+        ["xpath=//a[@id='seekerLoginLink']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'companyLogin')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Вход')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f048a46-3877-47d6-9a6e-e90a9775ec58",
+      "comment": "",
+      "command": "type",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=p:nth-child(1) > .input-field", "css:finder"],
+        ["xpath=//input[@name='login']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "myLogin"
+    }, {
+      "id": "27b20f3d-fe0c-4b56-b6a6-6e1ba46b17bb",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=p:nth-child(2) > .input-field", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "1234"
+    }, {
+      "id": "087f6ed0-fcce-4eb0-b416-d326278bd56f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.submit-button",
+      "targets": [
+        ["css=.submit-button", "css:finder"],
+        ["xpath=//input[@value='Войти']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0a5fa7cf-783f-45d1-9f2d-425a40b1175f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Редактировать",
+      "targets": [
+        ["linkText=Редактировать", "linkText"],
+        ["css=.btn:nth-child(7)", "css:finder"],
+        ["xpath=//a[contains(text(),'Редактировать')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/companyPage/7/edit')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Редактировать')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bed624d6-4dcc-4b93-8251-ee3e67a41b85",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Редактирование информации о компании",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bdf42272-f8cd-4c18-a3f3-6f185ca16d03",
+      "comment": "",
+      "command": "click",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=p:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//p[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b86f958-1e3e-4cbd-aa7e-f318add21518",
+      "comment": "",
+      "command": "type",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=p:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//p[3]/input", "xpath:position"]
+      ],
+      "value": "Газпром"
+    }, {
+      "id": "3d9e3398-58e9-4faa-a3c3-967e8788cfb3",
+      "comment": "",
+      "command": "click",
+      "target": "name=info",
+      "targets": [
+        ["name=info", "name"],
+        ["css=p:nth-child(4) > .form-control", "css:finder"],
+        ["xpath=//input[@name='info']", "xpath:attributes"],
+        ["xpath=//p[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a3006a7-8f82-465b-822e-615860d06b2d",
+      "comment": "",
+      "command": "type",
+      "target": "name=info",
+      "targets": [
+        ["name=info", "name"],
+        ["css=p:nth-child(4) > .form-control", "css:finder"],
+        ["xpath=//input[@name='info']", "xpath:attributes"],
+        ["xpath=//p[4]/input", "xpath:position"]
+      ],
+      "value": "Государственная нефтяная компания"
+    }, {
+      "id": "688f5d8b-fd91-4c94-890a-e848fb5582e6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@value='Обновить']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a72b7cf-e56f-4ae5-99e9-a359a512f7e2",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=p:nth-child(2) > span > span",
+      "targets": [],
+      "value": "Газпром"
+    }, {
+      "id": "ef3acb19-8a66-4c2e-b56a-2d696b52d94a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Мои вакансии",
+      "targets": [
+        ["linkText=Мои вакансии", "linkText"],
+        ["css=a:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Мои вакансии')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/companyPage/7/vacancies')]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Мои вакансии')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "13f66eb1-0569-45d1-b92c-c21269bc4d1a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Добавить",
+      "targets": [
+        ["linkText=Добавить", "linkText"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Добавить')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/companyPage/7/vacancies/add')]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Добавить')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc0bf87e-d991-401f-a2dd-04a54e1bf51c",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Добавить вакансию",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "385f147b-90ac-4fa4-9c65-5a6bb765ef51",
+      "comment": "",
+      "command": "click",
+      "target": "name=title",
+      "targets": [
+        ["name=title", "name"],
+        ["css=p:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='title']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e47f26b-a990-4bf2-8bf4-7725ea9c7f6d",
+      "comment": "",
+      "command": "type",
+      "target": "name=title",
+      "targets": [
+        ["name=title", "name"],
+        ["css=p:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='title']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Менеджер"
+    }, {
+      "id": "0b0bfa3b-bc41-425f-8bad-ce3bddbcd930",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-center",
+      "targets": [
+        ["css=.text-center", "css:finder"],
+        ["xpath=//form/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7504b801-b8a3-43fa-9a84-9d85616920f3",
+      "comment": "",
+      "command": "click",
+      "target": "name=salary",
+      "targets": [
+        ["name=salary", "name"],
+        ["css=p:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//input[@name='salary']", "xpath:attributes"],
+        ["xpath=//p[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c3aa854-619e-4077-928e-e0425fc582b0",
+      "comment": "",
+      "command": "type",
+      "target": "name=salary",
+      "targets": [
+        ["name=salary", "name"],
+        ["css=p:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//input[@name='salary']", "xpath:attributes"],
+        ["xpath=//p[3]/input", "xpath:position"]
+      ],
+      "value": "70000"
+    }, {
+      "id": "063bd37d-f971-43df-9e46-00ea66484a8c",
+      "comment": "",
+      "command": "click",
+      "target": "name=requirements",
+      "targets": [
+        ["name=requirements", "name"],
+        ["css=p:nth-child(4) > .form-control", "css:finder"],
+        ["xpath=//input[@name='requirements']", "xpath:attributes"],
+        ["xpath=//p[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d48c626-778d-4a49-b9ff-9acbb303dac0",
+      "comment": "",
+      "command": "type",
+      "target": "name=requirements",
+      "targets": [
+        ["name=requirements", "name"],
+        ["css=p:nth-child(4) > .form-control", "css:finder"],
+        ["xpath=//input[@name='requirements']", "xpath:attributes"],
+        ["xpath=//p[4]/input", "xpath:position"]
+      ],
+      "value": "Наличие опыта работы не менее 3 лет"
+    }, {
+      "id": "50f60aed-b85e-4640-9403-fd5cc5ee1ac3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@value='Добавить']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f3d1dd0-c59f-4540-9c08-c6cd29b39989",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(1) > td:nth-child(1) > span",
+      "targets": [
+        ["css=tr:nth-child(1) > td:nth-child(1) > span", "css:finder"],
+        ["xpath=//td/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Менеджер')]", "xpath:innerText"]
+      ],
+      "value": "Менеджер"
+    }]
+  }, {
+    "id": "579ab09c-b8c5-4b36-bcc9-571895c55140",
+    "name": "SeekersFilter",
+    "commands": [{
+      "id": "cd4e2371-6f5d-44ec-8ab4-b1ef3c121216",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1919cc1f-6305-4f83-bcdc-ed8899079c68",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1206x693",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "304f8f66-a2f6-4139-905c-d0b4f1e6a875",
+      "comment": "",
+      "command": "click",
+      "target": "id=rootCompanyLink",
+      "targets": [
+        ["id=rootCompanyLink", "id"],
+        ["linkText=Для компаний", "linkText"],
+        ["css=#rootCompanyLink", "css:finder"],
+        ["xpath=//a[contains(text(),'Для компаний')]", "xpath:link"],
+        ["xpath=//a[@id='rootCompanyLink']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'indexCompany')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Для компаний')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ca9ac868-f8c7-4ff2-9639-4906645539f1",
+      "comment": "",
+      "command": "click",
+      "target": "id=seekerLoginLink",
+      "targets": [
+        ["id=seekerLoginLink", "id"],
+        ["linkText=Вход", "linkText"],
+        ["css=#seekerLoginLink", "css:finder"],
+        ["xpath=//a[contains(text(),'Вход')]", "xpath:link"],
+        ["xpath=//a[@id='seekerLoginLink']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'companyLogin')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Вход')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "00cbf4e8-3db8-42f6-8b41-6f3c7922dfc5",
+      "comment": "",
+      "command": "type",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=p:nth-child(1) > .input-field", "css:finder"],
+        ["xpath=//input[@name='login']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "myLogin"
+    }, {
+      "id": "367b6aba-1e9c-4388-814a-b22bb6757752",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=p:nth-child(2) > .input-field", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "1234"
+    }, {
+      "id": "4b8e3b3b-38c7-43b5-8636-c9af5fa6f822",
+      "comment": "",
+      "command": "click",
+      "target": "css=.submit-button",
+      "targets": [
+        ["css=.submit-button", "css:finder"],
+        ["xpath=//input[@value='Войти']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "234648f4-8f02-4258-806e-fb705e6ac8f7",
+      "comment": "",
+      "command": "click",
+      "target": "id=seekersListLink",
+      "targets": [
+        ["id=seekersListLink", "id"],
+        ["linkText=Работники", "linkText"],
+        ["css=#seekersListLink", "css:finder"],
+        ["xpath=//a[contains(text(),'Работники')]", "xpath:link"],
+        ["xpath=//a[@id='seekersListLink']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/companyPage/8/seekers')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Работники')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bff26ae4-b758-4d33-8563-4d069f92af17",
+      "comment": "",
+      "command": "click",
+      "target": "name=education",
+      "targets": [
+        ["name=education", "name"],
+        ["css=.col:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='education']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "549436a5-ab93-4434-afeb-f302d62bbffb",
+      "comment": "",
+      "command": "type",
+      "target": "name=education",
+      "targets": [
+        ["name=education", "name"],
+        ["css=.col:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='education']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "МГУ"
+    }, {
+      "id": "f9f05fcd-f1fd-41d0-b858-e035a238ea67",
+      "comment": "",
+      "command": "click",
+      "target": "name=company",
+      "targets": [
+        ["name=company", "name"],
+        ["css=.col:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='company']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "83e86ce3-1def-41f1-a4ad-f99857188c4b",
+      "comment": "",
+      "command": "type",
+      "target": "name=company",
+      "targets": [
+        ["name=company", "name"],
+        ["css=.col:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='company']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Яндекс"
+    }, {
+      "id": "1de1d755-4463-4744-b591-e5a93da7df76",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[5]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Поиск')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "102eaa58-4bf0-4276-99e5-32fdf1d855aa",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Подробнее",
+      "targets": [
+        ["linkText=Подробнее", "linkText"],
+        ["css=td > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Подробнее')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/companyPage/8/seeker/1')]", "xpath:href"],
+        ["xpath=//td[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Подробнее')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a3e96846-dba5-4be4-a249-ce62df40e26a",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Информация о работнике",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a5954ad3-e04b-43f1-b8c3-2939612ab90e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=p:nth-child(3) > span > span",
+      "targets": [
+        ["css=p:nth-child(3) > span > span", "css:finder"],
+        ["xpath=//div[@id='SeekerInfo']/p[2]/span/span", "xpath:idRelative"],
+        ["xpath=//p[2]/span/span", "xpath:position"]
+      ],
+      "value": "МГУ, факультет ВМК"
+    }, {
+      "id": "766bb677-bdfb-472c-9ad3-092109fa22f8",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(1) > td:nth-child(1) > span",
+      "targets": [
+        ["css=tr:nth-child(1) > td:nth-child(1) > span", "css:finder"],
+        ["xpath=//td/span", "xpath:position"],
+        ["xpath=//span[contains(.,'ООО \"Яндекс\"')]", "xpath:innerText"]
+      ],
+      "value": "ООО \"Яндекс\""
+    }]
+  }, {
+    "id": "b3aae0e6-f378-4d53-930c-333de13db501",
+    "name": "RegistrationSeeker",
+    "commands": [{
+      "id": "2ab34317-785b-4989-9b60-3947e3be5afa",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fe6ade8f-092f-4741-916a-1878b09077ab",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1206x693",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4869397f-d8c9-4e55-b998-e2b23003ce63",
+      "comment": "",
+      "command": "click",
+      "target": "id=seekerRegLink",
+      "targets": [
+        ["id=seekerRegLink", "id"],
+        ["linkText=Регистрация", "linkText"],
+        ["css=#seekerRegLink", "css:finder"],
+        ["xpath=//a[contains(text(),'Регистрация')]", "xpath:link"],
+        ["xpath=//a[@id='seekerRegLink']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'seekerRegistration')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Регистрация')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9968a1cb-ebee-4078-80d6-fc6ce8576ca5",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Регистрация",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e7653e11-9644-4f98-967d-a9bb02bfe9f4",
+      "comment": "",
+      "command": "type",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=p:nth-child(1) > .input-field", "css:finder"],
+        ["xpath=//input[@name='login']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "SeekerLogin"
+    }, {
+      "id": "799912a2-f5a2-4883-b75c-c30aafa9381f",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=p:nth-child(2) > .input-field", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "pas123"
+    }, {
+      "id": "4020bee3-2333-4842-9d4a-c034d1265388",
+      "comment": "",
+      "command": "click",
+      "target": "css=p:nth-child(2)",
+      "targets": [
+        ["css=p:nth-child(2)", "css:finder"],
+        ["xpath=//p[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a2417d46-0957-423a-96cd-3f87ea74001a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.submit-button",
+      "targets": [
+        ["css=.submit-button", "css:finder"],
+        ["xpath=//input[@value='Зарегистрироваться']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e49de0c-24c3-4647-b649-7e5b87b5c5ec",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Вход",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c8c97861-49ea-4104-908e-462709b37023",
+      "comment": "",
+      "command": "type",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=p:nth-child(1) > .input-field", "css:finder"],
+        ["xpath=//input[@name='login']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "SeekerLogin"
+    }, {
+      "id": "82fdb7ae-ba32-47fc-abe5-a10f3536de57",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=p:nth-child(2) > .input-field", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "pas123"
+    }, {
+      "id": "49991fc9-1900-4161-9cc5-66b7cb673ec3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.submit-button",
+      "targets": [
+        ["css=.submit-button", "css:finder"],
+        ["xpath=//input[@value='Войти']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ac44c78-bb25-4b67-a32c-be6dcc7fe693",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Страница пользователя",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "3b819975-7859-4f09-80b2-b00331a6b13d",
+    "name": "EditSeekerPage",
+    "commands": [{
+      "id": "4e6fc38f-aed6-42a2-83bc-5b4c392ca9a8",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3e9eb754-2e85-4228-8c1b-b46ed8f4e980",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1206x693",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b3293490-8d22-4720-9207-444abab09cd9",
+      "comment": "",
+      "command": "click",
+      "target": "id=seekerLoginLink",
+      "targets": [
+        ["id=seekerLoginLink", "id"],
+        ["linkText=Вход", "linkText"],
+        ["css=#seekerLoginLink", "css:finder"],
+        ["xpath=//a[contains(text(),'Вход')]", "xpath:link"],
+        ["xpath=//a[@id='seekerLoginLink']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'seekerLogin')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Вход')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a6ebff6f-0da8-4b32-96e2-912cfeb1d28e",
+      "comment": "",
+      "command": "type",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=p:nth-child(1) > .input-field", "css:finder"],
+        ["xpath=//input[@name='login']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "SeekerLogin"
+    }, {
+      "id": "1057563b-82d4-46cb-b409-2aed2f0477ba",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=p:nth-child(2) > .input-field", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "pas123"
+    }, {
+      "id": "59ec3ff0-5d74-4d95-b80b-202caede15f0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.submit-button",
+      "targets": [
+        ["css=.submit-button", "css:finder"],
+        ["xpath=//input[@value='Войти']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f8d5ec0c-7c4f-41f6-a2b1-8c443eb19638",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Редактировать",
+      "targets": [
+        ["linkText=Редактировать", "linkText"],
+        ["css=.btn:nth-child(14)", "css:finder"],
+        ["xpath=//a[contains(text(),'Редактировать')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/seekerPage/12/edit')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Редактировать')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "78043bd1-e255-416c-932d-63b12b6f5a1b",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Редактирование информации о себе",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bcf60dba-13b8-477e-99d9-d8a9597631a4",
+      "comment": "",
+      "command": "click",
+      "target": "name=fullName",
+      "targets": [
+        ["name=fullName", "name"],
+        ["css=p:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//input[@name='fullName']", "xpath:attributes"],
+        ["xpath=//p[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "353cf59f-f8a6-46ca-a73b-624c35cf336c",
+      "comment": "",
+      "command": "type",
+      "target": "name=fullName",
+      "targets": [
+        ["name=fullName", "name"],
+        ["css=p:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//input[@name='fullName']", "xpath:attributes"],
+        ["xpath=//p[3]/input", "xpath:position"]
+      ],
+      "value": "Казанцева Варвара Денисовна"
+    }, {
+      "id": "7352889e-1c0f-4323-9a4d-90f8d1f0f315",
+      "comment": "",
+      "command": "click",
+      "target": "name=educationInfo",
+      "targets": [
+        ["name=educationInfo", "name"],
+        ["css=p:nth-child(5) > .form-control", "css:finder"],
+        ["xpath=//input[@name='educationInfo']", "xpath:attributes"],
+        ["xpath=//p[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f800237-28c9-482d-a483-a989c9de2062",
+      "comment": "",
+      "command": "click",
+      "target": "name=status",
+      "targets": [
+        ["name=status", "name"],
+        ["css=p:nth-child(6) > .form-control", "css:finder"],
+        ["xpath=//input[@name='status']", "xpath:attributes"],
+        ["xpath=//p[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "58d63163-f844-497d-85fb-cda42f2916b4",
+      "comment": "",
+      "command": "type",
+      "target": "name=status",
+      "targets": [
+        ["name=status", "name"],
+        ["css=p:nth-child(6) > .form-control", "css:finder"],
+        ["xpath=//input[@name='status']", "xpath:attributes"],
+        ["xpath=//p[6]/input", "xpath:position"]
+      ],
+      "value": "Ищу работу"
+    }, {
+      "id": "85c8a005-d937-4967-b21e-95f74fe2dfce",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@value='Обновить']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f824605e-87ca-49e4-b405-90ca40ce63a8",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=p:nth-child(2) > span > span",
+      "targets": [
+        ["css=p:nth-child(2) > span > span", "css:finder"],
+        ["xpath=//span/span", "xpath:position"]
+      ],
+      "value": "Казанцева Варвара Денисовна"
+    }, {
+      "id": "3c41acf6-e9a9-4c3e-bc47-6fe9b4559f3a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Опыт работы",
+      "targets": [
+        ["linkText=Опыт работы", "linkText"],
+        ["css=a:nth-child(11)", "css:finder"],
+        ["xpath=//a[contains(text(),'Опыт работы')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/seekerPage/12/prevJob')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Опыт работы')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "563c56f4-8505-4f63-a10f-8fcad3c85158",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Добавить",
+      "targets": [
+        ["linkText=Добавить", "linkText"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Добавить')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/seekerPage/12/prevJob/add')]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Добавить')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "571f21bc-751c-4b6c-845b-63734f8e019a",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Добавить предыдущее место работы",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6c1329a1-1b2c-45c4-aa65-51bf03d34721",
+      "comment": "",
+      "command": "click",
+      "target": "name=company",
+      "targets": [
+        ["name=company", "name"],
+        ["css=p:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='company']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bb76acf8-d532-40ed-baf8-4e56a2fd9b5b",
+      "comment": "",
+      "command": "type",
+      "target": "name=company",
+      "targets": [
+        ["name=company", "name"],
+        ["css=p:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='company']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Макдоналдс"
+    }, {
+      "id": "d0154a48-fe9b-4829-87bb-5bd97ca766bc",
+      "comment": "",
+      "command": "click",
+      "target": "name=salary",
+      "targets": [
+        ["name=salary", "name"],
+        ["css=p:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//input[@name='salary']", "xpath:attributes"],
+        ["xpath=//p[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "68128442-284a-4da6-82fa-5540431eac9c",
+      "comment": "",
+      "command": "type",
+      "target": "name=salary",
+      "targets": [
+        ["name=salary", "name"],
+        ["css=p:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//input[@name='salary']", "xpath:attributes"],
+        ["xpath=//p[3]/input", "xpath:position"]
+      ],
+      "value": "15000"
+    }, {
+      "id": "4813cd9e-558f-4ea2-a8a5-2a0238b8fb3f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@value='Добавить']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8fce3010-bddf-4ceb-85c6-3e76435fd77f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=td:nth-child(1) > span",
+      "targets": [
+        ["css=td:nth-child(1) > span", "css:finder"],
+        ["xpath=//td/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Макдоналдс')]", "xpath:innerText"]
+      ],
+      "value": "Макдоналдс"
+    }]
+  }, {
+    "id": "8db2ee29-7bb7-43ec-97c7-95462c0d0ed8",
+    "name": "VacanciesFilter",
+    "commands": [{
+      "id": "23cea964-f00b-446f-bd4a-ecc56b161122",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8ab40eb1-5e08-4249-ad57-21f7ff33ddd1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1206x693",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e3524537-710e-47ba-8ce0-9fdbccf7677e",
+      "comment": "",
+      "command": "click",
+      "target": "id=seekerLoginLink",
+      "targets": [
+        ["id=seekerLoginLink", "id"],
+        ["linkText=Вход", "linkText"],
+        ["css=#seekerLoginLink", "css:finder"],
+        ["xpath=//a[contains(text(),'Вход')]", "xpath:link"],
+        ["xpath=//a[@id='seekerLoginLink']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'seekerLogin')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Вход')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "70fa8271-37f9-4021-b6ae-e5abd88d90fa",
+      "comment": "",
+      "command": "type",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=p:nth-child(1) > .input-field", "css:finder"],
+        ["xpath=//input[@name='login']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "SeekerLogin"
+    }, {
+      "id": "fd25c8e0-82a3-44a2-a48e-cac1dd8b8e31",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=p:nth-child(2) > .input-field", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "pas123"
+    }, {
+      "id": "c5de3d2d-0874-459d-a2e0-ba4828b9f034",
+      "comment": "",
+      "command": "click",
+      "target": "css=.submit-button",
+      "targets": [
+        ["css=.submit-button", "css:finder"],
+        ["xpath=//input[@value='Войти']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e507c5c-98f6-4cb5-bbe7-230a688705bb",
+      "comment": "",
+      "command": "click",
+      "target": "id=vacanciesListLink",
+      "targets": [
+        ["id=vacanciesListLink", "id"],
+        ["linkText=Вакансии", "linkText"],
+        ["css=#vacanciesListLink", "css:finder"],
+        ["xpath=//a[contains(text(),'Вакансии')]", "xpath:link"],
+        ["xpath=//a[@id='vacanciesListLink']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/seekerPage/12/vacancies')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Вакансии')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ed80cc8-8ce3-440e-b37b-00348e55dd1e",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Вакансии",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cb4ca2dc-716f-4f8a-b015-18597cf22b3f",
+      "comment": "",
+      "command": "click",
+      "target": "name=salary",
+      "targets": [
+        ["name=salary", "name"],
+        ["css=.col:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//input[@name='salary']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "29d6925a-35e4-42da-9ca6-46788b50951c",
+      "comment": "",
+      "command": "type",
+      "target": "name=salary",
+      "targets": [
+        ["name=salary", "name"],
+        ["css=.col:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//input[@name='salary']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "150000"
+    }, {
+      "id": "04038efc-9d2c-49c5-9e73-94eedd97c15e",
+      "comment": "",
+      "command": "click",
+      "target": "name=company",
+      "targets": [
+        ["name=company", "name"],
+        ["css=.col:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='company']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "75d0ba55-cab1-4098-a5cb-ed416b70a197",
+      "comment": "",
+      "command": "type",
+      "target": "name=company",
+      "targets": [
+        ["name=company", "name"],
+        ["css=.col:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='company']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "ВКонтакте"
+    }, {
+      "id": "26178ee4-9f6b-49a3-8931-3654e570c4ab",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Поиск')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "62f10806-d71f-468b-856a-f49c33829f55",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Подробнее",
+      "targets": [
+        ["linkText=Подробнее", "linkText"],
+        ["css=td > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Подробнее')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/seekerPage/12/vacancy/5')]", "xpath:href"],
+        ["xpath=//td[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Подробнее')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "35d114fc-99cf-4603-808d-9a814ea93f2e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h4",
+      "targets": [
+        ["css=h4", "css:finder"],
+        ["xpath=//div[@id='VacancyInfo']/h4", "xpath:idRelative"],
+        ["xpath=//h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Разработчик веб-приложений')]", "xpath:innerText"]
+      ],
+      "value": "Разработчик веб-приложений"
+    }, {
+      "id": "163fc111-6bef-4041-b59c-a7a5d70ee0a2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=(о компании)",
+      "targets": [
+        ["linkText=(о компании)", "linkText"],
+        ["css=a:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'(о компании)')]", "xpath:link"],
+        ["xpath=//div[@id='VacancyInfo']/p[2]/span/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/seekerPage/12/companyInfo/4')]", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'(о компании)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a58823e4-1bf0-4d5e-8f06-1014f4b7bddf",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Информация о компании",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "49f92d69-9caf-4244-a29b-44f1233038c3",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h4",
+      "targets": [
+        ["css=h4", "css:finder"],
+        ["xpath=//div[@id='CompanyInfo']/h4", "xpath:idRelative"],
+        ["xpath=//h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'ООО \"ВКонтакте\"')]", "xpath:innerText"]
+      ],
+      "value": "ООО \"ВКонтакте\""
+    }]
+  }, {
+    "id": "e1dc6e64-83a3-44b0-8dd3-b945daafef4e",
+    "name": "ResponseToVacancy",
+    "commands": [{
+      "id": "5202b36f-5a00-45bb-a996-da69cf78cd49",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ce02d797-0006-43e5-9dcf-3fc8aa348782",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1206x693",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7a30ad1e-6c75-470e-b0de-1b1787ac4ca5",
+      "comment": "",
+      "command": "click",
+      "target": "id=seekerLoginLink",
+      "targets": [
+        ["id=seekerLoginLink", "id"],
+        ["linkText=Вход", "linkText"],
+        ["css=#seekerLoginLink", "css:finder"],
+        ["xpath=//a[contains(text(),'Вход')]", "xpath:link"],
+        ["xpath=//a[@id='seekerLoginLink']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'seekerLogin')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Вход')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "427de21e-4644-4f6f-83fa-f7dde7385b5b",
+      "comment": "",
+      "command": "type",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=p:nth-child(1) > .input-field", "css:finder"],
+        ["xpath=//input[@name='login']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "SeekerLogin"
+    }, {
+      "id": "f6070f7d-f894-482a-b83e-2bf7242fbd5b",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=p:nth-child(2) > .input-field", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "pas123"
+    }, {
+      "id": "9d5a2359-997e-4b2d-9ef7-efba18fcde14",
+      "comment": "",
+      "command": "click",
+      "target": "css=.submit-button",
+      "targets": [
+        ["css=.submit-button", "css:finder"],
+        ["xpath=//input[@value='Войти']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ecce03fe-1a45-4edc-9b48-9d08b47898d5",
+      "comment": "",
+      "command": "click",
+      "target": "id=vacanciesListLink",
+      "targets": [
+        ["id=vacanciesListLink", "id"],
+        ["linkText=Вакансии", "linkText"],
+        ["css=#vacanciesListLink", "css:finder"],
+        ["xpath=//a[contains(text(),'Вакансии')]", "xpath:link"],
+        ["xpath=//a[@id='vacanciesListLink']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/seekerPage/12/vacancies')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Вакансии')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b06c669e-f156-4d04-8363-5cc25da69637",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(4) a",
+      "targets": [
+        ["css=tr:nth-child(4) a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Подробнее')])[4]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/seekerPage/12/vacancy/8')]", "xpath:href"],
+        ["xpath=//tr[4]/td[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4247c6c2-8db2-46b9-977f-0eb8a26fab40",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Информация о вакансии",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6743772c-caf7-4849-8a4a-0a815ca87e7d",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Откликнуться",
+      "targets": [
+        ["linkText=Откликнуться", "linkText"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Откликнуться')]", "xpath:link"],
+        ["xpath=//div[@id='VacancyInfo']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/seekerPage/12/vacancy/8/click')]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Откликнуться')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0904e412-0a97-4b8a-989f-3512676961ad",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Откликнуться",
+      "targets": [
+        ["linkText=Откликнуться", "linkText"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Откликнуться')]", "xpath:link"],
+        ["xpath=//div[@id='VacancyInfo']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/seekerPage/12/vacancy/8/click')]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Откликнуться')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c762f50-c542-46a7-a0f6-acb12e5c96bb",
+      "comment": "",
+      "command": "click",
+      "target": "id=seekerPageLink",
+      "targets": [
+        ["id=seekerPageLink", "id"],
+        ["linkText=Главная", "linkText"],
+        ["css=#seekerPageLink", "css:finder"],
+        ["xpath=//a[contains(text(),'Главная')]", "xpath:link"],
+        ["xpath=//a[@id='seekerPageLink']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/seekerPage/12')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Главная')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a1e23785-f1cf-4139-a36b-eaf298e9c87d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Мои отклики",
+      "targets": [
+        ["linkText=Мои отклики", "linkText"],
+        ["css=a:nth-child(8)", "css:finder"],
+        ["xpath=//a[contains(text(),'Мои отклики')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/seekerPage/12/response')]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Мои отклики')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0355af8-cc02-4162-a17c-01f7bf4753cb",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=td:nth-child(1) > span",
+      "targets": [
+        ["css=td:nth-child(1) > span", "css:finder"],
+        ["xpath=//td/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Менеджер')]", "xpath:innerText"]
+      ],
+      "value": "Менеджер"
+    }, {
+      "id": "2940fef7-7453-4949-9bab-6d795410bd6a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Подробнее",
+      "targets": [
+        ["linkText=Подробнее", "linkText"],
+        ["css=td > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Подробнее')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/seekerPage/12/vacancy/8')]", "xpath:href"],
+        ["xpath=//td[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Подробнее')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b72ebca9-50e8-476c-9ab6-2c121f48e399",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h4",
+      "targets": [
+        ["css=h4", "css:finder"],
+        ["xpath=//div[@id='VacancyInfo']/h4", "xpath:idRelative"],
+        ["xpath=//h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Менеджер')]", "xpath:innerText"]
+      ],
+      "value": "Менеджер"
+    }]
+  }, {
+    "id": "1c82b492-b6fb-42f4-a548-cd3443146d94",
+    "name": "ResponsesFromSeekers",
+    "commands": [{
+      "id": "b1f274e3-1ee1-4e75-aa22-115e7492e992",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "78c5ec4d-332d-4833-b030-808b27dbf7b1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1206x693",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "15923f3c-3918-488d-b3a0-a729030e82b0",
+      "comment": "",
+      "command": "click",
+      "target": "id=rootCompanyLink",
+      "targets": [
+        ["id=rootCompanyLink", "id"],
+        ["linkText=Для компаний", "linkText"],
+        ["css=#rootCompanyLink", "css:finder"],
+        ["xpath=//a[contains(text(),'Для компаний')]", "xpath:link"],
+        ["xpath=//a[@id='rootCompanyLink']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'indexCompany')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Для компаний')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "16e29f57-b7db-42ba-8350-74f099406505",
+      "comment": "",
+      "command": "click",
+      "target": "id=seekerLoginLink",
+      "targets": [
+        ["id=seekerLoginLink", "id"],
+        ["linkText=Вход", "linkText"],
+        ["css=#seekerLoginLink", "css:finder"],
+        ["xpath=//a[contains(text(),'Вход')]", "xpath:link"],
+        ["xpath=//a[@id='seekerLoginLink']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'companyLogin')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Вход')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "86908fb5-eb28-4a38-9921-44095698b2a1",
+      "comment": "",
+      "command": "type",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=p:nth-child(1) > .input-field", "css:finder"],
+        ["xpath=//input[@name='login']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "myLogin"
+    }, {
+      "id": "c0f54474-e92e-4226-9222-549aa361e103",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=p:nth-child(2) > .input-field", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "1234"
+    }, {
+      "id": "570b46f6-f4c7-404f-9a97-44fbf896a670",
+      "comment": "",
+      "command": "click",
+      "target": "css=.submit-button",
+      "targets": [
+        ["css=.submit-button", "css:finder"],
+        ["xpath=//input[@value='Войти']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6255dd60-1789-4835-8f36-381014d96890",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Мои вакансии",
+      "targets": [
+        ["linkText=Мои вакансии", "linkText"],
+        ["css=a:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Мои вакансии')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/companyPage/8/vacancies')]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Мои вакансии')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f544da00-5565-41ae-9ba3-11d683683e89",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Мои вакансии",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "624de90e-b350-4b65-8cd2-8d375992f54f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Отклики",
+      "targets": [
+        ["linkText=Отклики", "linkText"],
+        ["css=td > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Отклики')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/companyPage/8/vacancies/8/responses')]", "xpath:href"],
+        ["xpath=//td[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Отклики')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "58a6be6c-1112-406f-af82-53c11ea77caa",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Отклики",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "847f8ea9-8611-4df3-9f49-eea17ca47078",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=td > span",
+      "targets": [
+        ["css=td > span", "css:finder"],
+        ["xpath=//td/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Казанцева Варвара Денисовна')]", "xpath:innerText"]
+      ],
+      "value": "Казанцева Варвара Денисовна"
+    }, {
+      "id": "48a659ae-227d-4880-8ede-6d4d0a31e2f2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Подробнее",
+      "targets": [
+        ["linkText=Подробнее", "linkText"],
+        ["css=td > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Подробнее')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/companyPage/8/vacancies/8/responses/12')]", "xpath:href"],
+        ["xpath=//td[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Подробнее')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "31cabdec-8c54-4a9c-ab4e-06b76d8ac4f0",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Информация о работнике",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "c615ebcc-3eb6-426c-9938-1fdbfefeb051",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost:8080/"],
+  "plugins": []
+}
